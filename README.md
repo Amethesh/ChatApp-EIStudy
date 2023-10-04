@@ -2,6 +2,10 @@
 
 This is a simple live chat application built using React, Express, and Socket.io. This README will guide you through the code and explain how to run the application locally.
 
+
+![GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGVianA1cXA5emdnc3J2Ymw4cGQ2MmNlZXpxa2dobnk4dWhvZTZnbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9Q70X6JEBDChJs6mR7/giphy.gif)
+
+
 ## Features
 
 - **Real-time Chat**: Allows users to join chat rooms and send/receive messages in real-time.
