@@ -84,15 +84,3 @@ This application follows some key OOP concepts:
 
 - **Reusability**: React components are used to create reusable UI elements, such as message containers and input fields.
 
-## Contributing
-
-Feel free to contribute to this project by opening issues or submitting pull requests. Your feedback and contributions are highly appreciated!
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- This project was created as a learning exercise for real-time web applications.
-- Special thanks to the developers and contributors of React, Express, Socket.io, and other open-source libraries used in this project.
