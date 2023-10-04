@@ -64,9 +64,9 @@ Before running the application, ensure you have the following installed:
    npm start
    ```
 
-   This will start the React application on `http://localhost:3000`.
+   This will start the React application on `http://localhost:5173`.
 
-3. Open your web browser and navigate to `http://localhost:3000` to access the chat application.
+3. Open your web browser and navigate to `http://localhost:5173` to access the chat application.
 
 4. Enter your username and room ID, and click "Join Room" to start chatting.
 
