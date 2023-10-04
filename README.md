@@ -20,7 +20,9 @@ This is a simple live chat application built using React, Express, and Socket.io
 Before running the application, ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/) (with npm)
-- [Git](https://git-scm.com/)
+- socket.io (Websocket)
+- React.js
+- Typescript
 
 ## Installation and Setup
 
