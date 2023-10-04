@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 interface ChatProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -25,6 +25,14 @@ const Chat: React.FC<ChatProps> = ({ socket, username, room }) => {
       await socket.emit("send_message", messageData);
     }
   };
+
+  useEffect(() => {
+    socket.on("receive_message", (data) => {
+      console.log(data);
+    });
+    return () => socket.removeListener("receive_message");
+  }, [socket]);
+
   return (
     <div>
       <div className="chat-header">
