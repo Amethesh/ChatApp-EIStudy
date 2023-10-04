@@ -11,14 +11,18 @@ const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
     //To deal with cors errors
-    origin: "http://localhost:3000", //Client url (replace this during deployment)
+    origin: "http://localhost:5173", //Client url (replace this during deployment)
     methods: ["GET", "POST"],
   },
 });
 
 io.on("connection", (socket) => {
-  console.log(socket.id); //Getting ids of connected users
+  console.log(`User Connected: ${socket.id}`); //Getting ids of connected users
 
+  socket.on("join_room", (data) => {
+    socket.join(data);
+    console.log(`User with id: ${socket.id} joined room: ${data}`);
+  });
   socket.on("disconnect", () => {
     console.log("User Disconnected", socket.id); //Getting ids of users who disconnected
   });
